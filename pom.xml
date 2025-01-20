@@ -10,8 +10,9 @@
 	</parent>
 	<groupId>com.eroskoller.practicing</groupId>
 	<artifactId>accounts</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>s4</version>
 	<name>02-springboot-accounts</name>
+	<packaging>jar</packaging>
 	<description>MicroServices Accounts Practicing to see with I&apos;m still sharp</description>
 	<url/>
 	<licenses>
@@ -80,6 +81,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.4</version>
+				<configuration>
+					<to>
+						<image>eroskoller/${project.artifactId}:${project.version}</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
