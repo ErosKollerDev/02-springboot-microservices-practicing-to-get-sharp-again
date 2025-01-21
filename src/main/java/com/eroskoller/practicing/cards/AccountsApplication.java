@@ -1,8 +1,10 @@
 package com.eroskoller.practicing.cards;
 
+import com.eroskoller.practicing.cards.dto.AccountsContactInfoDto;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
@@ -26,6 +28,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
                 description = "GitHub",
                 url = "https://github.com/ErosKollerDev/02-springboot-microservices-practicing-to-get-sharp-again")
 )
+@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 public class AccountsApplication {
 
     public static void main(String[] args) {
