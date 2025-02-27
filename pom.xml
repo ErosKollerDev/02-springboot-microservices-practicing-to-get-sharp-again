@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eroskoller.practicing</groupId>
     <artifactId>accounts</artifactId>
-    <version>s6</version>
+    <version>s7</version>
     <name>02-springboot-accounts</name>
     <packaging>jar</packaging>
     <description>MicroServices Accounts Practicing to see with I&apos;m still sharp</description>
@@ -60,10 +60,15 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.h2database</groupId>-->
+        <!--            <artifactId>h2</artifactId>-->
+        <!--            <scope>runtime</scope>-->
+        <!--        </dependency>-->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -83,10 +88,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
+        <!--        </dependency>-->
     </dependencies>
     <dependencyManagement>
         <dependencies>

@@ -6,7 +6,7 @@ import lombok.*;
 
 @Entity
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor @Builder
-@Table(name = "cards")
+@Table(name = "accounts")
 public class AccountsEntity extends BaseEntity   {
 
     @Id
